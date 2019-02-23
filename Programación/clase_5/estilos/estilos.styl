@@ -1,36 +1,95 @@
 *
-  box-sizing: border-box
+  border 1px  rgba(black, 0.1)
+  box-sizing border-box
 
 body
-  margin: 0
-  font-family: 'Raleway', sans-serif;
+  margin 0  
+  background-color #fafafa
+  font-family 'Raleway', sans-serif;
 
-.header
-  position: fixed
-  width: 100%
-  height: 50px
-  border: 1px solid rgb(153, 153, 153)
-  background-color: white
-  top: 0
+.nav
+  width 100%
+  border-bottom 1px solid #eee
+  box-shadow 5px 0 10px gray
+  position fixed
+  top 0
+  background-color #fafafa
+
+  .logo
+    height 50px
+    position absolute
+    width 50px
+    margin 5px 30px
+
+    .logo__img
+      height 100%
+      position absolute
+      width 100%
 
   ul
-    li
+    font-size 14px
+    height 60px
+    list-style none 
+    margin 0 auto
+    margin-left 110px
+    padding-left 0
+    text-transform uppercase
+
+    .list__item
+      cursor pointer
       display inline-block
-      list-style none
-      margin 0 20px
-      cursor: pointer
-      color brown
-      font-family 18px
-      padding-left:  8px
-      padding-right: 8px
-      border-right 1px solid
-      
-.h1
-  text-align: center
+      height 100%
+      line-height 60px
+      margin auto -2px 
+      text-align center
+      width  25%
+      &:hover
+        background-color #eee
 
-.main
-  margin 60px 50px 50px 50px
+.content
+  margin 70px auto 0 auto
+  display flex
+  align-items stretch
+  font-size 0.9em
+  width 85%
 
-.text
+  .section-left,
+  .principal,
+  .section-right
+    border-radius 20px
+    padding 15px
+    margin 5px
+    .h1
+      text-align center
+    .text
+      text-align justify
+
+  .section-left
+    background-color rgba(brown, 0.2) 
+    width 20%
+
+  .principal
+    background-color rgba(blue, 0.2) 
+    width 50%
+
+  .section-right
+    background-color rgba(green, 0.2) 
+    width 30%
+
+
+
+
   
-  text-align justify
+
+
+
+
+
+      
+
+
+    
+
+    
+
+

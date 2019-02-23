@@ -30,10 +30,11 @@ body
     font-size 14px
     height 60px
     list-style none 
-    margin 0 auto
+    margin      0 auto
     margin-left 110px
     padding-left 0
     text-transform uppercase
+    overflow auto
 
     .list__item
       cursor pointer
@@ -43,6 +44,7 @@ body
       margin auto -2px 
       text-align center
       width  25%
+      min-width 110px
       &:hover
         background-color #eee
 
@@ -57,24 +59,38 @@ body
   .principal,
   .section-right
     border-radius 20px
-    padding 15px
+    box-shadow: 6px 6px 10px -4px rgba(0,0,0,0.55);
     margin 5px
+    padding 15px
+    color black
     .h1
       text-align center
     .text
       text-align justify
 
   .section-left
-    background-color rgba(brown, 0.2) 
+    background-color rgba(red, 0.2) 
     width 20%
 
   .principal
-    background-color rgba(blue, 0.2) 
+    background-color rgba(steelblue, 0.2) 
     width 50%
 
   .section-right
-    background-color rgba(green, 0.2) 
+    background-color rgba(lime, 0.2) 
     width 30%
+  
+  @media (max-width: 767px)
+    display block
+
+    .section-left,
+    .principal,
+    .section-right
+      margin-left  auto
+      margin-right auto
+      width 80%
+    .principal, .section-right
+      margin-top 10px
 
 
 
